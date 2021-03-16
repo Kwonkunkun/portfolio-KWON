@@ -5,6 +5,7 @@ import Canvas from "./components/canvas";
 import Introduce from "./components/introduce";
 import Skill from "./components/skill";
 import Footer from "./components/footer";
+import Project from "./components/project";
 
 function App() {
     return (
@@ -12,9 +13,10 @@ function App() {
             <CssBaseline />
             <Header />
             <main>
-                <Introduce />
+                {/* <Introduce />
                 <Canvas />
-                <Skill />
+                <Skill /> */}
+                <Project />
             </main>
             <Footer />
         </>

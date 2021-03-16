@@ -45,7 +45,7 @@ const Introduce = () => {
 
 const useStyles = makeStyles((theme) => ({
     Container: {
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: "rgb(255, 192, 192)",
         padding: theme.spacing(8, 0, 6),
     },
     Button: {
