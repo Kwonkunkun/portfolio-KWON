@@ -17,8 +17,8 @@ export class Wave {
                 stageHeight / 2,
                 0,
                 i < this.numOfPoint / 2
-                    ? (150 / this.numOfPoint) * i
-                    : (150 / this.numOfPoint) * (this.numOfPoint - 1 - i)
+                    ? (50 / this.numOfPoint) * i
+                    : (50 / this.numOfPoint) * (this.numOfPoint - 1 - i)
             );
             point.t = this.idx + i / (this.numOfPoint - 1);
             this.points.push(point);

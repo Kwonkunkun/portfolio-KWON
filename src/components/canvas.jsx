@@ -11,7 +11,7 @@ const Canvas = () => {
         const ctx = canvas.getContext("2d");
         let stageWidth = document.body.clientWidth;
         let stageHeight = document.body.clientHeight * 0.4;
-        const waveGroup = new WaveGroup(stageWidth, stageHeight, 2);
+        const waveGroup = new WaveGroup(stageWidth, stageHeight, 4);
         let animationFrameId;
 
         //resize
@@ -51,8 +51,8 @@ const Canvas = () => {
 
 const canvasStyle = css`
     background: rgb(255, 192, 192);
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 50vh;
 `;
 
 export default Canvas;
