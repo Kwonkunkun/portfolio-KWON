@@ -57,7 +57,7 @@ const Canvas = ({ waveAmp }) => {
 const canvasStyle = css`
     background: rgb(255, 192, 192);
     width: 100%;
-    height: 55vh;
+    height: 65vh;
 `;
 
 export default Canvas;

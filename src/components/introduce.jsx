@@ -32,7 +32,7 @@ const Introduce = () => {
                 >
                     {introduce.info}
                 </Typography>
-                <div className={classes.Button}>
+                {/* <div className={classes.Button}>
                     <Grid container spacing={2} justify="center">
                         <Grid item>
                             <Button variant="outlined" color="primary">
@@ -40,7 +40,7 @@ const Introduce = () => {
                             </Button>
                         </Grid>
                     </Grid>
-                </div>
+                </div> */}
             </Container>
         </section>
     );
