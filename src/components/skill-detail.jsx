@@ -1,28 +1,19 @@
 import React from "react";
 import SkillBar from "react-skillbars";
 
-const skills = [
-    { type: "C++", level: 85 },
-    { type: "Javascript", level: 75 },
-    { type: "Html", level: 75 },
-    { type: "Css", level: 75 },
-    { type: "React", level: 75 },
-    { type: "Unity", level: 75 },
-];
-
-const SkillDetail = (props) => {
+const SkillDetail = ({ skills }) => {
     return (
         <div>
-            <SkillBar skills={skills} />
+            <SkillBar colors={colors} skills={skills} />
         </div>
     );
 };
 
 const colors = {
-    bar: "red",
+    bar: "rgba(91,207,227,0.5)",
     title: {
-        text: "#abc123",
-        background: "#fff",
+        text: "rgb(91,97,227)",
+        background: "rgba(102,255,212,0.5)",
     },
 };
 

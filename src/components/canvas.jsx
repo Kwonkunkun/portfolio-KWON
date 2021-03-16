@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { css } from "@emotion/react";
 import { WaveGroup } from "../wave/waveGroup";
 
-const Canvas = () => {
+const Canvas = ({ waveAmp }) => {
     const canvasRef = useRef(null);
 
     useEffect(() => {
@@ -11,7 +11,12 @@ const Canvas = () => {
         const ctx = canvas.getContext("2d");
         let stageWidth = document.body.clientWidth;
         let stageHeight = document.body.clientHeight * 0.4;
-        const waveGroup = new WaveGroup(stageWidth, stageHeight, 4);
+        const waveGroup = new WaveGroup(
+            stageWidth,
+            stageHeight,
+            4,
+            waveAmp === undefined ? 100 : waveAmp
+        );
         let animationFrameId;
 
         //resize
@@ -44,7 +49,7 @@ const Canvas = () => {
         return () => {
             window.cancelAnimationFrame(animationFrameId);
         };
-    }, []);
+    }, [waveAmp]);
 
     return <canvas css={canvasStyle} ref={canvasRef} />;
 };
@@ -52,7 +57,7 @@ const Canvas = () => {
 const canvasStyle = css`
     background: rgb(255, 192, 192);
     width: 100%;
-    height: 50vh;
+    height: 55vh;
 `;
 
 export default Canvas;

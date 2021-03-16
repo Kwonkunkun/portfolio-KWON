@@ -6,15 +6,15 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
-const SkillCard = ({ name }) => {
+const SkillCard = ({ card }) => {
     const classes = useStyles();
 
     return (
         <Card className={classes.root}>
-            <CardHeader title="Frontend" />
+            <CardHeader title={card.title} />
             <CardMedia
                 className={classes.media}
-                image="/frontend.png"
+                image={card.img}
                 title="Paella dish"
             />
             <CardContent>

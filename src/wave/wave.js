@@ -1,7 +1,8 @@
 import { Point } from "./point.js";
 
 export class Wave {
-    constructor(stageWidth, stageHeight, numOfPoint, color, idx) {
+    constructor(stageWidth, stageHeight, numOfPoint, color, idx, waveAmp) {
+        this.waveAmp = waveAmp;
         this.idx = idx;
         this.stageWidth = stageWidth;
         this.stageHeight = stageHeight;
@@ -16,9 +17,7 @@ export class Wave {
                 (stageWidth / (this.numOfPoint - 1)) * i,
                 stageHeight / 2,
                 0,
-                i < this.numOfPoint / 2
-                    ? (100 / this.numOfPoint) * i
-                    : (100 / this.numOfPoint) * (this.numOfPoint - 1 - i)
+                this.calAmplitude(i, this.waveAmp, this.numOfPoint)
             );
             point.t = this.idx + i / (this.numOfPoint - 1);
             this.points.push(point);
@@ -26,6 +25,20 @@ export class Wave {
 
         this.stageWidth = stageWidth;
         this.stageHeight = stageHeight;
+    }
+
+    calAmplitude(idx, maxAmplitude, numOfPoint) {
+        return idx < numOfPoint / 2
+            ? (maxAmplitude / numOfPoint) * idx
+            : (maxAmplitude / numOfPoint) * (numOfPoint - 1 - idx);
+    }
+
+    changeAmplitude(maxAmplitude) {
+        this.points.forEach((point, idx) => {
+            point.setAmplitude(
+                this.calAmplitude(idx, maxAmplitude, this.numOfPoint)
+            );
+        });
     }
 
     resize(stageWidth, stageHeight) {

@@ -12,6 +12,10 @@ export class Point {
         this.dy = 0;
     }
 
+    setAmplitude(amplitude) {
+        this.amplitude = amplitude;
+    }
+
     //sin이용해서 계속 변경
     draw(ctx) {
         //여기서 y를 바꾼다.

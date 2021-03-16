@@ -9,8 +9,9 @@ const colors = [
 ];
 
 export class WaveGroup {
-    constructor(stageWidth, stageHeight, numOfWave) {
+    constructor(stageWidth, stageHeight, numOfWave, waveAmp) {
         this.numOfWave = numOfWave;
+        this.waveAmp = waveAmp;
         this.init(stageWidth, stageHeight);
     }
     init(stageWidth, stageHeight) {
@@ -22,7 +23,8 @@ export class WaveGroup {
                     stageHeight,
                     11,
                     colors[i],
-                    parseFloat(i / this.numOfWave)
+                    parseFloat(i / this.numOfWave),
+                    this.waveAmp
                 );
                 this.waves.push(wave);
             }

@@ -5,6 +5,11 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
+const introduce = {
+    greetings: "안녕하세요~😀",
+    info: "다양한 분야에 관심이 많은 육각형 개발자 권건우 입니다!",
+};
+
 const Introduce = () => {
     const classes = useStyles();
     return (
@@ -17,7 +22,7 @@ const Introduce = () => {
                     color="textPrimary"
                     gutterBottom
                 >
-                    Hi there~😀
+                    {introduce.greetings}
                 </Typography>
                 <Typography
                     variant="h5"
@@ -25,9 +30,7 @@ const Introduce = () => {
                     color="textSecondary"
                     paragraph
                 >
-                    Something short and leading about the collection below—its
-                    contents, the creator, etc. Make it short and sweet, but not
-                    too short so folks don&apos;t simply skip over it entirely.
+                    {introduce.info}
                 </Typography>
                 <div className={classes.Button}>
                     <Grid container spacing={2} justify="center">

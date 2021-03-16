@@ -6,21 +6,30 @@ import Introduce from "./components/introduce";
 import Skill from "./components/skill";
 import Footer from "./components/footer";
 import Project from "./components/project";
+import styled from "@emotion/styled";
+import ControlSlider from "./components/controlSlider";
+import { useState } from "react";
 
 function App() {
+    const [waveAmp, setWaveAmp] = useState(100);
     return (
         <>
             <CssBaseline />
             <Header />
-            <main>
-                {/* <Introduce />
-                <Canvas />
-                <Skill /> */}
+            <Main>
+                <Introduce />
+                <ControlSlider waveAmp={waveAmp} setWaveAmp={setWaveAmp} />
+                <Canvas waveAmp={waveAmp} />
+                <Skill />
                 <Project />
-            </main>
+            </Main>
             <Footer />
         </>
     );
 }
+
+const Main = styled.main`
+    background-color: rgb(255, 192, 192);
+`;
 
 export default App;

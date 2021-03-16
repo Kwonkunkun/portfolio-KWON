@@ -45,14 +45,14 @@ const projects = [
     {
         title: "제3의 눈(AR 전시)",
         info:
-            "서울문화재단 청년예술청 지원사업 - <스페이스랩:아직> 선정작품 , AR 개발자로 참여 ",
+            "서울문화재단 청년예술청 지원사업 - <스페이스랩:아직> 선정작품 , AR 전시 개발자로 참여, 뇌파센서와 연동하여 뇌파값에 따라 오브젝트 변화",
         img:
             "https://user-images.githubusercontent.com/59603575/102004337-9cfcc580-3cc4-11eb-93ce-d2bdaba81a20.png",
         gitUrl: "https://github.com/Kwonkunkun/AR_Exhibition",
     },
 ];
 
-const Project = (props) => {
+const Project = () => {
     const classes = useStyles();
     return (
         <Container className={classes.cardGrid} maxWidth="md">
@@ -68,7 +68,7 @@ const Project = (props) => {
             </Typography>
             <Grid container spacing={4}>
                 {projects.map((project, idx) => (
-                    <ProjectCard idx={idx} project={project} />
+                    <ProjectCard key={idx} project={project} />
                 ))}
             </Grid>
         </Container>
@@ -77,6 +77,7 @@ const Project = (props) => {
 
 const useStyles = makeStyles((theme) => ({
     cardGrid: {
+        backgroundColor: "rgba(113, 175, 250, 0.5)",
         paddingTop: theme.spacing(8),
         paddingBottom: theme.spacing(8),
     },

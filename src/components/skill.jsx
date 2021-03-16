@@ -6,6 +6,20 @@ import SkillCard from "./skill-card";
 import Grid from "@material-ui/core/Grid";
 import SkillDetail from "./skill-detail";
 
+const skills = [
+    { type: "C++", level: 85 },
+    { type: "Javascript", level: 75 },
+    { type: "Html", level: 75 },
+    { type: "Css", level: 75 },
+    { type: "React", level: 75 },
+    { type: "Unity", level: 75 },
+];
+
+const cards = [
+    { title: "Frontend", img: "/Frontend.png" },
+    { title: "VR & AR", img: "/VR.jpeg" },
+];
+
 const Skill = () => {
     const classes = useStyles();
     return (
@@ -22,14 +36,13 @@ const Skill = () => {
                     Skills
                 </Typography>
                 <Grid container spacing={10}>
-                    <Grid item sm={6} xs={12}>
-                        <SkillCard />
-                    </Grid>
-                    <Grid item sm={6} xs={12}>
-                        <SkillCard />
-                    </Grid>
+                    {cards.map((card, idx) => (
+                        <Grid key={idx} item sm={6} xs={12}>
+                            <SkillCard key={idx} card={card} />
+                        </Grid>
+                    ))}
                     <Grid item sm={12} xs={12}>
-                        <SkillDetail />
+                        <SkillDetail skills={skills} />
                     </Grid>
                 </Grid>
             </Container>
@@ -39,7 +52,7 @@ const Skill = () => {
 
 const useStyles = makeStyles((theme) => ({
     Container: {
-        backgroundColor: theme.palette.background.paper,
+        // backgroundColor: "rgba(113,175,250,0.5)",
         padding: theme.spacing(8, 0, 6),
     },
     title: {
