@@ -46,7 +46,6 @@ const useStyles = makeStyles((theme) => ({
     },
     cardContent: {
         flexGrow: 1,
-        backgroundColor: "rgba(91,207,227,0.5)",
     },
 }));
 export default ProjectCard;

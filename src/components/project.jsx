@@ -55,29 +55,38 @@ const projects = [
 const Project = () => {
     const classes = useStyles();
     return (
-        <Container className={classes.cardGrid} maxWidth="md">
-            <Typography
-                className={classes.title}
-                component="h1"
-                variant="h4"
-                align="center"
-                color="textPrimary"
-                gutterBottom
+        <section className={classes.Container}>
+            <Container
+                className={classes.cardGrid}
+                maxWidth="md"
+                component="main"
             >
-                Projects
-            </Typography>
-            <Grid container spacing={4}>
-                {projects.map((project, idx) => (
-                    <ProjectCard key={idx} project={project} />
-                ))}
-            </Grid>
-        </Container>
+                <Typography
+                    className={classes.title}
+                    component="h1"
+                    variant="h4"
+                    align="center"
+                    color="textPrimary"
+                    gutterBottom
+                >
+                    Projects
+                </Typography>
+                <Grid container spacing={4}>
+                    {projects.map((project, idx) => (
+                        <ProjectCard key={idx} project={project} />
+                    ))}
+                </Grid>
+            </Container>
+        </section>
     );
 };
 
 const useStyles = makeStyles((theme) => ({
+    Container: {
+        backgroundColor: "rgba(91,207,227,0.5)",
+        padding: theme.spacing(8, 0, 6),
+    },
     cardGrid: {
-        backgroundColor: "rgba(113, 175, 250, 0.5)",
         paddingTop: theme.spacing(8),
         paddingBottom: theme.spacing(8),
     },

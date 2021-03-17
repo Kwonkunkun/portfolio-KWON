@@ -14,7 +14,7 @@ const Canvas = ({ waveAmp }) => {
         const waveGroup = new WaveGroup(
             stageWidth,
             stageHeight,
-            4,
+            5,
             waveAmp === undefined ? 100 : waveAmp
         );
         let animationFrameId;

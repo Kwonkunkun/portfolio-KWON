@@ -9,6 +9,7 @@ import Project from "./components/project";
 import styled from "@emotion/styled";
 import ControlSlider from "./components/controlSlider";
 import { useState } from "react";
+import About from "./components/about";
 
 function App() {
     const [waveAmp, setWaveAmp] = useState(100);
@@ -20,6 +21,7 @@ function App() {
                 <Introduce />
                 <ControlSlider waveAmp={waveAmp} setWaveAmp={setWaveAmp} />
                 <Canvas waveAmp={waveAmp} />
+                <About />
                 <Skill />
                 <Project />
             </Main>

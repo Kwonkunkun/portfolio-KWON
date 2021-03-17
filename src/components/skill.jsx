@@ -52,7 +52,7 @@ const Skill = () => {
 
 const useStyles = makeStyles((theme) => ({
     Container: {
-        // backgroundColor: "rgba(113,175,250,0.5)",
+        backgroundColor: "rgba(113,175,250,0.5)",
         padding: theme.spacing(8, 0, 6),
     },
     title: {
