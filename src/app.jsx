@@ -18,9 +18,9 @@ function App() {
             <CssBaseline />
             <Header />
             <Main>
-                <Introduce />
+                {/* <Introduce />
                 <ControlSlider waveAmp={waveAmp} setWaveAmp={setWaveAmp} />
-                <Canvas waveAmp={waveAmp} />
+                <Canvas waveAmp={waveAmp} /> */}
                 <About />
                 <Skill />
                 <Project />

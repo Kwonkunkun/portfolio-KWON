@@ -24,10 +24,10 @@ const ProjectCard = ({ project }) => {
                         title={project.title}
                     />
                     <CardContent className={classes.cardContent}>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography gutterBottom variant="h6" component="h2">
                             {project.title}
                         </Typography>
-                        <Typography>{project.info}</Typography>
+                        <Typography variant="h8">{project.info}</Typography>
                     </CardContent>
                 </CardActionArea>
             </Card>

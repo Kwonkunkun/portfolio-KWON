@@ -30,7 +30,6 @@ const SkillCard = ({ card }) => {
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 345,
         margin: "auto",
     },
     media: {

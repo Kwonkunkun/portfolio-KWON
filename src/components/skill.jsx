@@ -7,12 +7,15 @@ import Grid from "@material-ui/core/Grid";
 import SkillDetail from "./skill-detail";
 
 const skills = [
-    { type: "C++", level: 85 },
-    { type: "Javascript", level: 75 },
+    { type: "C++", level: 70 },
+    { type: "JavaScript", level: 73 },
+    { type: "TypeScirpt", level: 51 },
     { type: "Html", level: 75 },
-    { type: "Css", level: 75 },
-    { type: "React", level: 75 },
-    { type: "Unity", level: 75 },
+    { type: "Css", level: 60 },
+    { type: "React", level: 80 },
+    { type: "Redux", level: 60 },
+    { type: "Unity", level: 65 },
+    { type: "ML", level: 50 },
 ];
 
 const cards = [
@@ -35,12 +38,12 @@ const Skill = () => {
                 >
                     Skills
                 </Typography>
-                <Grid container spacing={10}>
-                    {cards.map((card, idx) => (
+                <Grid container spacing={4}>
+                    {/* {cards.map((card, idx) => (
                         <Grid key={idx} item sm={6} xs={12}>
                             <SkillCard key={idx} card={card} />
                         </Grid>
-                    ))}
+                    ))} */}
                     <Grid item sm={12} xs={12}>
                         <SkillDetail skills={skills} />
                     </Grid>
@@ -56,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(8, 0, 6),
     },
     title: {
-        marginBottom: theme.spacing(6),
+        marginBottom: theme.spacing(10),
     },
     skillDetail: {
         marginTop: theme.spacing(3),
