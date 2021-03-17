@@ -20,7 +20,7 @@ const ControlSlider = ({ setWaveAmp }) => {
             <Typography gutterBottom>Wave Amplitude</Typography>
             <Slider
                 onChangeCommitted={onChange}
-                defaultValue={100}
+                defaultValue={300}
                 getAriaValueText={valuetext}
                 aria-labelledby="discrete-slider"
                 valueLabelDisplay="auto"

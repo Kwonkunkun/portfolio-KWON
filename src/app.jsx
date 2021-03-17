@@ -12,7 +12,7 @@ import { useState } from "react";
 import About from "./components/about";
 
 function App() {
-    const [waveAmp, setWaveAmp] = useState(100);
+    const [waveAmp, setWaveAmp] = useState(300);
     return (
         <>
             <CssBaseline />

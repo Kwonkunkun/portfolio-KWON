@@ -15,7 +15,7 @@ const Canvas = ({ waveAmp }) => {
             stageWidth,
             stageHeight,
             5,
-            waveAmp === undefined ? 100 : waveAmp
+            waveAmp === undefined ? 300 : waveAmp
         );
         let animationFrameId;
 
