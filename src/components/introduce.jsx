@@ -50,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
     Container: {
         backgroundColor: "rgb(255, 192, 192)",
         padding: theme.spacing(8, 0, 6),
+        marginTop: theme.spacing(5),
     },
     Button: {
         marginTop: theme.spacing(4),

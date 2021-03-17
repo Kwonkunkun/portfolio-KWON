@@ -35,13 +35,14 @@ const ControlSlider = ({ setWaveAmp }) => {
 
 const useStyles = makeStyles({
     root: {
-        backgroundColor: "rgb(255, 192, 192)",
-        width: 200,
+        color: "gray",
+        width: "80%",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         margin: "auto",
+        padding: "1rem",
     },
 });
 

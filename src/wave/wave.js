@@ -15,7 +15,7 @@ export class Wave {
         for (let i = 0; i < this.numOfPoint; i++) {
             const point = new Point(
                 (stageWidth / (this.numOfPoint - 1)) * i,
-                stageHeight / 2,
+                (stageHeight * 3) / 4,
                 0,
                 this.calAmplitude(i, this.waveAmp, this.numOfPoint)
             );

@@ -55,9 +55,14 @@ const Canvas = ({ waveAmp }) => {
 };
 
 const canvasStyle = css`
-    background: rgb(255, 192, 192);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: transparent;
     width: 100%;
-    height: 65vh;
+    height: 60vh;
 `;
 
 export default Canvas;
