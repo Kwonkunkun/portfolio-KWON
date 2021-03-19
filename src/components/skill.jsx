@@ -2,7 +2,6 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import SkillCard from "./skill-card";
 import Grid from "@material-ui/core/Grid";
 import SkillDetail from "./skill-detail";
 
@@ -16,11 +15,6 @@ const skills = [
     { type: "Redux", level: 60 },
     { type: "Unity", level: 65 },
     { type: "ML", level: 50 },
-];
-
-const cards = [
-    { title: "Frontend", img: "/Frontend.png" },
-    { title: "VR & AR", img: "/VR.jpeg" },
 ];
 
 const Skill = () => {
