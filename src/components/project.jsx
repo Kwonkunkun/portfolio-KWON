@@ -7,6 +7,14 @@ import Typography from "@material-ui/core/Typography";
 
 const projects = [
     {
+        title: "globlin",
+        info:
+            "React, Redux, Redux-saga를 이용하여 인플루언서 마케팅에 필요한 기능들을 구현",
+        img:
+            "https://user-images.githubusercontent.com/59603575/124921130-0bbfb880-e033-11eb-8cc3-ad051d3b24ac.png",
+        gitUrl: "https://github.com/Kwonkunkun/globlin_guide",
+    },
+    {
         title: "simple_particle",
         info: "particle 효과, 비 효과를 html canvas, 바닐라js로 구현",
         img:

@@ -5,7 +5,7 @@ import Container from "@material-ui/core/Container";
 
 const introduce = {
     greetings: "안녕하세요~😀",
-    info: "다양한 분야에 관심이 많은 육각형 개발자 권건우 입니다!",
+    info: "다양한 분야에 관심이 많은 프론트앤드 개발자 권건우 입니다!",
 };
 
 const Introduce = () => {

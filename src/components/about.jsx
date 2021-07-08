@@ -8,7 +8,8 @@ const abouts = [
     {
         img: "/frontend.png",
         title: "FRONTEND",
-        info: "HTML, CSS, Javascript, TypeScript, React, Redux",
+        info:
+            "HTML, CSS, emotion, antd, Javascript, TypeScript, React, Redux, Redux-saga, Next.js",
     },
     {
         img: "/vr.png",
@@ -18,7 +19,7 @@ const abouts = [
     {
         img: "/other.png",
         title: "OTHERS",
-        info: "Stm32f, Arduino, Deep learning",
+        info: "Stm32f, Deep learning",
     },
 ];
 

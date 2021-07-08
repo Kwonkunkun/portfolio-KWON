@@ -8,13 +8,15 @@ import SkillDetail from "./skill-detail";
 const skills = [
     { type: "C++", level: 70 },
     { type: "JavaScript", level: 73 },
-    { type: "TypeScirpt", level: 51 },
+    { type: "TypeScirpt", level: 65 },
     { type: "Html", level: 75 },
     { type: "Css", level: 60 },
+    { type: "emotion", level: 60 },
+    { type: "antd", level: 60 },
     { type: "React", level: 80 },
-    { type: "Redux", level: 60 },
-    { type: "Unity", level: 65 },
-    { type: "ML", level: 50 },
+    { type: "Redux", level: 70 },
+    { type: "Redux-saga", level: 70 },
+    { type: "React-query", level: 50 },
 ];
 
 const Skill = () => {
