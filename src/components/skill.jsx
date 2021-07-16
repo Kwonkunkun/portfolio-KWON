@@ -15,8 +15,8 @@ const skills = [
     { type: "antd", level: 60 },
     { type: "React", level: 80 },
     { type: "Redux", level: 70 },
-    { type: "Redux-saga", level: 70 },
-    { type: "React-query", level: 50 },
+    { type: "ReduxSaga", level: 70 },
+    { type: "ReactQuery", level: 50 },
 ];
 
 const Skill = () => {
