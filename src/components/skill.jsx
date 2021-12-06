@@ -12,7 +12,7 @@ const skills = [
   { type: "Html", level: 80 },
   { type: "Css", level: 75 },
   { type: "React", level: 90 },
-  { type: "React-native", level: 80 },
+  { type: "ReactNative", level: 80 },
   { type: "Redux", level: 80 },
   { type: "ReduxSaga", level: 80 },
   { type: "Recoil", level: 70 },

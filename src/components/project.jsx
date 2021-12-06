@@ -8,6 +8,8 @@ import Typography from "@material-ui/core/Typography";
 const projects = [
   {
     title: "pampam",
+    participationLevel: "30%",
+    role: "ios 개발 (swift)",
     info:
       "중고거래 platform ios app, 마이페이지, 지도, 필터, 검색 등을 맡아 구현",
     img:
@@ -17,21 +19,27 @@ const projects = [
   },
   {
     title: "globlin",
+    participationLevel: "100%",
+    role: "web frontend 개발",
     info:
-      "React, Redux, Redux-saga를 이용하여 인플루언서 마케팅에 필요한 기능들을 구현",
+      "react, redux, redux-saga를 이용한, influencer 마케팅 관리 툴 프로젝트",
     img:
       "https://user-images.githubusercontent.com/59603575/124921130-0bbfb880-e033-11eb-8cc3-ad051d3b24ac.png",
     gitUrl: "https://github.com/Kwonkunkun/globlin_guide",
   },
   {
     title: "simple_particle",
-    info: "particle 효과, 비 효과를 html canvas, 바닐라js로 구현",
+    participationLevel: "100%",
+    role: "web frontend 개발",
+    info: "particle 효과, 비 효과를 html canvas, 바닐라js로 구현한 프로젝트",
     img:
       "https://user-images.githubusercontent.com/59603575/103346337-0e1ae600-4ad7-11eb-8b23-e5f618819610.gif",
     gitUrl: "https://github.com/Kwonkunkun/Simple_particle",
   },
   {
     title: "youtube_clone",
+    participationLevel: "100%",
+    role: "web frontend 개발",
     info: "Youtube api, react를 이용한 youtube 클론코딩 프로젝트",
     img:
       "https://user-images.githubusercontent.com/59603575/105004700-acb3ba80-5a77-11eb-90f5-d29bb14a529c.png",
@@ -39,6 +47,8 @@ const projects = [
   },
   {
     title: "cardmaker",
+    participationLevel: "100%",
+    role: "web frontend 개발",
     info: "react, firebase를 이용한 카드를 만들수 있는 프로젝트",
     img:
       "https://user-images.githubusercontent.com/59603575/105945809-5400a500-60a9-11eb-96f3-7c2363c35aad.gif",
@@ -46,6 +56,8 @@ const projects = [
   },
   {
     title: "온고지신-국궁(VR-BowAndArrow)",
+    participationLevel: "70%",
+    role: "unity vr 개발",
     info: "VR을 이용한 교육적 목적의 국궁 체험 시뮬레이션 콘텐츠",
     img:
       "https://user-images.githubusercontent.com/59603575/102003822-a9325400-3cbf-11eb-8367-af01291f9b33.png",
@@ -53,6 +65,8 @@ const projects = [
   },
   {
     title: "VR-DrawAndPainting",
+    participationLevel: "90%",
+    role: "unity vr & 딥러닝 모델 개발",
     info:
       "VR상에서 그림을 그려 딥러닝 모델로 판별하고 다시 VR환경에 관련 오브젝트를 띄운다. 이후, 오브젝트로 색칠하며 전시하는 프로젝트",
     img:
@@ -61,6 +75,8 @@ const projects = [
   },
   {
     title: "제3의 눈(AR 전시)",
+    participationLevel: "80%",
+    role: "unity ar 개발",
     info:
       "서울문화재단 청년예술청 지원사업 - <스페이스랩:아직> 선정작품 , AR 전시 개발자로 참여, 뇌파센서와 연동하여 뇌파값에 따라 오브젝트 변화",
     img:
