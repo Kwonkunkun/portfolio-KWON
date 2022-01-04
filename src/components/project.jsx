@@ -7,6 +7,15 @@ import Typography from "@material-ui/core/Typography";
 
 const projects = [
   {
+    title: "오늘의 그림일기",
+    participationLevel: "100%",
+    role: "react native(expo)를 이용한 app 개발",
+    info: "나만의 그림일기를 만드는 프로젝트",
+    img:
+      "https://user-images.githubusercontent.com/59603575/148080155-c12d7dfc-6ff4-4552-9491-e4dd94a63da8.png",
+    gitUrl: "https://github.com/Kwonkunkun/TodaysPictureDiary",
+  },
+  {
     title: "pampam",
     participationLevel: "30%",
     role: "ios 개발 (swift)",
