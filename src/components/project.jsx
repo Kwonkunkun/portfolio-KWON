@@ -12,7 +12,7 @@ const projects = [
     role: "react native(expo)를 이용한 app 개발",
     info: "나만의 그림일기를 만드는 프로젝트",
     img:
-      "https://user-images.githubusercontent.com/59603575/148080155-c12d7dfc-6ff4-4552-9491-e4dd94a63da8.png",
+      "https://user-images.githubusercontent.com/59603575/148080811-6311b5bf-791c-4f79-b8e5-30c2458be1e3.png",
     gitUrl: "https://github.com/Kwonkunkun/TodaysPictureDiary",
   },
   {
